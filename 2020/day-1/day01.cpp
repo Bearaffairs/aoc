@@ -24,9 +24,9 @@ int main() {
   // If we don't find it. There is no point in comparing the previous
   // values to the current one  as we have already compared these values.
   // This will reduce the time taken.
+  bool found_two_sum = false;
+  bool found_three_sum = false;
   for (size_t i = 0; i <= values.size(); i++) {
-    bool found_two_sum = false;
-    bool found_three_sum = false;
     for (size_t k = i; k < values.size(); k++) {
       int sum = values.at(i) + values.at(k);
       if (sum == goal) {
